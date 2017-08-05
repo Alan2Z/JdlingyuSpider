@@ -81,6 +81,8 @@ class Jdlingyu:
             f.close()
             x+=1
             print '第%s张图片写入成功' % x
+        self.Pics_List = []
+
 
     def work(self):
         pagenum = int(self.getLastPageNums())
@@ -92,7 +94,6 @@ class Jdlingyu:
                 self.getPic(self.Pics_Url[x])
                 time.sleep(random.randint(1,5))
                 self.downPics(self.Pics_Name)
-
 
 jd = Jdlingyu()
 jd.work()
