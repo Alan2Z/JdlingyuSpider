@@ -8,3 +8,7 @@
 
 错误原因：
 requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang', port=80): Max retries exceeded with url: //page1/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x02D973D0>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed',))
+
+
+8/5号第三次上传
+8/6号第四次上传  爬取功能已经完善
