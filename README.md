@@ -12,3 +12,6 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang'
 
 8/5号第三次上传
 8/6号第四次上传  爬取功能已经完善
+
+
+8/7号第五次上传  能自动跳过已下载过的图集  
