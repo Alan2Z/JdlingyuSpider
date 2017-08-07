@@ -93,7 +93,13 @@ class Jdlingyu:
             for x in range(0,10):
                 self.getPic(self.Pics_Url[x])
                 time.sleep(random.randint(1,5))
+                io_fileExists = os.path.exists(self.load_path+self.Pics_Name+'\\')
+                if io_fileExists:
+                    print '文件夹已存在'
+                    self.Pics_List = []
+                    continue
                 self.downPics(self.Pics_Name)
+            self.Pics_Url = []
 
 jd = Jdlingyu()
 jd.work()
