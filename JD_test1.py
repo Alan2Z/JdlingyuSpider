@@ -23,6 +23,7 @@ class Jdlingyu:
         self.Pics_List = []
         self.Pics_Name = ''
 
+
     def getLastPageNums(self):      #先获取首页的HTML  找到最后一页的页码
         homePage_html = se.get(self.main_url,headers = self.headers).text  #成功获取到首页的html
         homePage_soup = BeautifulSoup(homePage_html,'lxml')
@@ -67,6 +68,7 @@ class Jdlingyu:
     def downPics(self,Pics_name):
         # print Pics_name.decode
         Pics_name.encode('utf-8')
+        Pics_name = Pics_name.replace('?', '_').replace('/', '_').replace('\\', '_').replace('*', '_').replace('|', '_').replace('>', '_').replace('<', '_').replace(':', '_').replace('"', '_').strip()
         Pics_List = self.Pics_List
         x = 0
         for p_l in Pics_List:
@@ -87,7 +89,7 @@ class Jdlingyu:
     def work(self):
         pagenum = int(self.getLastPageNums())
         for page in range(1,pagenum):
-            print '正在第%d页' % page
+            print '--------------------------------------正在第%d页' % page
             self.getPage(page)
             time.sleep(random.randint(1,5))
             for x in range(0,10):
@@ -95,7 +97,7 @@ class Jdlingyu:
                 time.sleep(random.randint(1,5))
                 io_fileExists = os.path.exists(self.load_path+self.Pics_Name+'\\')
                 if io_fileExists:
-                    print '文件夹已存在'
+                    print '文件夹存在，已跳过'
                     self.Pics_List = []
                     continue
                 self.downPics(self.Pics_Name)
