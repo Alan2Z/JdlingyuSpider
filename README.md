@@ -15,3 +15,8 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang'
 
 
 8/7号第五次上传  能自动跳过已下载过的图集  
+
+
+
+9月17日  由于J站再次被墙  域名更改为.xyz  次爬虫已GG
+不再维护更新！！
