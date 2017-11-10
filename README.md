@@ -20,3 +20,8 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang'
 
 9月17日  由于J站再次被墙  域名更改为.xyz  次爬虫已GG
 不再维护更新！！
+
+
+11月10日 域名更换为 .fun
+上传一个解决小问题的.py
+用来检测所爬取的图集中一些视频和未知原因爬取失败但是创建了文件夹的图集
