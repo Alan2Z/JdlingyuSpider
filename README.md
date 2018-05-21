@@ -25,3 +25,10 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang'
 11月10日 域名更换为 .fun
 上传一个解决小问题的.py
 用来检测所爬取的图集中一些视频和未知原因爬取失败但是创建了文件夹的图集
+
+
+2018年5月21号
+发现网站的域名 jdlingyu.wang停用了
+公众号反馈域名更改为 jdlingyu.net
+整个网站改版
+明天开始尝试Scrapy写一个
