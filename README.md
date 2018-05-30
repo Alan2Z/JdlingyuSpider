@@ -32,3 +32,6 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.jdlingyu.wang'
 公众号反馈域名更改为 jdlingyu.net
 整个网站改版
 明天开始尝试Scrapy写一个
+
+5月30日 
+由于个人原因  无限期延后
